@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Reels App</title>
+  <style>
+    body { margin:0; background:black; color:white; }
+    video { width:100%; height:100vh; object-fit:cover; }
+    .btns { position:fixed; right:10px; bottom:100px; }
+    button { display:block; margin:10px; font-size:20px; }
+  </style>
+</head>
+<body>
+
+<video src="https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4"
+ autoplay loop muted></video>
+
+<div class="btns">
+  <button onclick="like()">❤️</button>
+  <button>💬</button>
+  <button>↗️</button>
+</div>
+
+<script>
+let likes = 0;
+function like(){
+  likes++;
+  alert("Likes: " + likes);
+}
+</script>
+
+</body>
+</html>
